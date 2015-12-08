@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPrincipalActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telaFundo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ludos"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_gravity="center|top">
+          
+      
+        <Button
+            style="@style/fundovermelhotextobranco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btAddProduto"
+            android:background="@drawable/botaovermelho"
+            android:text="@string/addProduto"
+            android:drawableLeft="@mipmap/ic_addproduto"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="50dp"
+            android:padding="2dp"
+            android:onClick="CadastrarProduto"/>
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/btListaProdutos"
+              android:background="@drawable/botaovermelho"
+              android:text="@string/listaaprodutos"
+              android:drawableLeft="@mipmap/ic_listaprodutos"
+              android:gravity="center"
+              style="@style/fundovermelhotextobranco"
+              android:layout_marginTop="10dp"
+              android:padding="2dp"
+              android:onClick="ListaProdutos"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:id="@+id/btAddPedido"
+            android:background="@drawable/botaovermelho"
+            android:text="@string/addPedido"
+            android:drawableLeft="@mipmap/ic_addpedido"
+            android:gravity="center"
+            style="@style/fundovermelhotextobranco"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:onClick="CadastrarPedido"/>
+
+          
+        <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/btFecharConta"
+              android:background="@drawable/botaovermelho"
+              android:text="@string/fecharConta"
+              android:drawableLeft="@mipmap/ic_fecharconta"
+              android:gravity="center"
+              style="@style/fundovermelhotextobranco"
+              android:layout_marginTop="10dp"
+              android:padding="2dp"
+              android:onClick="FecharConta"/>
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/btSobre"
+              android:background="@drawable/botaovermelho"
+              android:text="@string/sobre"
+              android:drawableLeft="@mipmap/ic_sobre"
+              android:gravity="center"
+              style="@style/fundovermelhotextobranco"
+              android:layout_marginTop="10dp"
+              android:padding="2dp"
+              android:onClick="Sobre"/>
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/btSair"
+              android:background="@drawable/botaovermelho"
+              android:text="@string/sair"
+              android:drawableLeft="@mipmap/ic_sair"
+              android:gravity="center"
+              style="@style/fundovermelhotextobranco"
+              android:layout_marginTop="10dp"
+              android:padding="2dp"
+              android:onClick="Sair"
+              android:layout_marginBottom="10dp"/>
+
+
+      </LinearLayout>  
+
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>

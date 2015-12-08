@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danilo.projetoandroid.CadastrarProdutoActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telaFundo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ludos"
+        android:alpha="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Produto: "
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/txtNomeProduto"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:hint="Ex: Pastel"
+            android:ems="10"
+            android:id="@+id/etNomeProduto"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:background="@drawable/etredondo" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preço do Produto: "
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/txtPrecoProduto"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Ex: 2.50"
+            android:ems="10"
+            android:id="@+id/etPrecoProduto"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:background="@drawable/etredondo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/fundovermelholimpartextobranco"
+                android:background="@drawable/botaovermelho"
+                android:drawableLeft="@mipmap/ic_limpar"
+                android:text="Limpar"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btLimparProduto"
+                android:onClick="LimparProduto"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/fundoverdetextobranco"
+                android:background="@drawable/botaoverde"
+                android:drawableLeft="@mipmap/ic_cadproduto"
+                android:text="Incluir"
+                android:gravity="center"
+                android:id="@+id/btCadProduto"
+                android:onClick="onClickIncluirProduto"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

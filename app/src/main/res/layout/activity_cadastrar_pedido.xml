@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danilo.projetoandroid.CadastrarPedidoActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telaFundo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ludos"
+        android:alpha="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número da Mesa: "
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/txtNumMesa"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ex: 10,  6"
+            android:ems="10"
+            android:id="@+id/etNumMesa"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:background="@drawable/etredondo"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID do Produto: "
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/txtIDProduto"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ex: 2,  7"
+            android:ems="10"
+            android:id="@+id/etIDProduto"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:background="@drawable/etredondo"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantidade: "
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/txtQuantidade"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ex: 3"
+            android:ems="10"
+            android:id="@+id/etQuantidade"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:background="@drawable/etredondo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/fundovermelholimpartextobranco"
+                android:background="@drawable/botaovermelho"
+                android:drawableLeft="@mipmap/ic_limpar"
+                android:text="Limpar"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btLimparPedido"
+                android:onClick="LimparPedido"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/fundoverdetextobranco"
+                android:background="@drawable/botaoverde"
+                android:drawableLeft="@mipmap/ic_confirmarpedido"
+                android:text="Confirmar"
+                android:gravity="center"
+                android:id="@+id/btConfPedido"
+                android:onClick="onClickConfPedido"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

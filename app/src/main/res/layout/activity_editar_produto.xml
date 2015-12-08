@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danilo.projetoandroid.EditarProdutoActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telaFundo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ludos"
+        android:alpha="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: "
+            android:id="@+id/txtIDEditar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#010101" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etIDEditar"
+            android:inputType="number"
+            android:editable="false"
+            android:enabled="false"
+            android:ems="10"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:backgroundTint="#030303"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Produto: "
+            android:id="@+id/txtProdutoEditar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#030303" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:ems="10"
+            android:id="@+id/etProdutoEditar"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:background="@drawable/etredondo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preço: "
+            android:id="@+id/txtPrecoEditar"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#030303" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/etPrecoEditar"
+            android:textColor="@color/primary_dark_material_dark"
+            android:textStyle="bold"
+            android:background="@drawable/etredondo" />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/fundoverdetextobranco"
+                android:background="@drawable/botaoverde"
+                android:text="Editar"
+                android:id="@+id/btEditarProduto"
+                android:drawableLeft="@mipmap/ic_editarproduto"
+                android:onClick="EditarProduto"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

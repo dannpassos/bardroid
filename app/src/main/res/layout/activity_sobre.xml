@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danilo.projetoandroid.SobreActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telaFundo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ludos"
+        android:alpha="0.3"/>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereço: "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtEndereço"
+                android:textColor="#020202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Av. Beira Mar, 1354 - Farolândia, Aracaju-SE."
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtEndereço2"
+                android:textColor="#010101"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver no Google Maps: "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtGoogleMap"
+                android:textColor="#020202" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btGoogleMap"
+                android:onClick="GoogleMap"
+                android:src="@mipmap/ic_googlemap"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtPhone"
+                android:textColor="#020202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7930241354"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtPhone2"
+                android:textColorLink="#010101"
+                android:autoLink="phone"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram: "
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#030303"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ic_instagramm"
+            android:background="@android:color/transparent"
+            android:id="@+id/btInstagram"
+            android:onClick="Instagram"
+            android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:id="@+id/viewConta"
+            android:layout_marginTop="25dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curso:  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtCurso"
+                android:textColor="#020202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programação Android para Dispositivos Móveis"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtCurso2"
+                android:textColor="#010101"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professor:  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtProfessor"
+                android:textColor="#020202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alexandre França"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtProfessor2"
+                android:textColor="#010101"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aluno:  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtAluno"
+                android:textColor="#020202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Danilo Santos Passos"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtAlunoA2"
+                android:textColor="#010101"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Versão:  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtVersao"
+                android:textColor="#020202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.0"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtVersao2"
+                android:textColor="#010101"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+</FrameLayout>

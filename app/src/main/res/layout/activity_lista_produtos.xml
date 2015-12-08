@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danilo.projetoandroid.ListaProdutosActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telaFundo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ludos"
+        android:alpha="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Produtos Cadastrados"
+            android:textSize="30sp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:id="@+id/txtProdutosCadLista"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#030303" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para excluir ou editar, pressione o produto na lista."
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:id="@+id/txtFrase"
+            android:textColor="#030303"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ID"
+                android:id="@+id/txtIDLista"
+                android:textStyle="bold"
+                android:textColor="#020202" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:id="@+id/txtNomeLista"
+                android:textStyle="bold"
+                android:textColor="#010101" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Preço"
+                android:id="@+id/textView3"
+                android:textStyle="bold"
+                android:textColor="#010101" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvProdutos">
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout>

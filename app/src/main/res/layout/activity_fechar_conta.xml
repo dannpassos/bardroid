@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.danilo.projetoandroid.FecharContaActivity"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/telaFundo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ludos"
+        android:alpha="0.4"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Digite o número da mesa: "
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#010101"
+                android:id="@+id/txtNumMesaFechar"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ex: 4,  12"
+                android:textStyle="bold"
+                android:id="@+id/etMesaFecharConta"
+                android:inputType="number"
+                android:background="@drawable/etredondo"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/fundoverdetextobranco"
+                    android:background="@drawable/botaoverde"
+                    android:id="@+id/btPesqMesa"
+                    android:drawableLeft="@mipmap/ic_confirmarpedido"
+                    android:text="Calcular"
+                    android:onClick="onClickPesquisarMesa"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    style="@style/fundovermelhotextobranco"
+                    android:background="@drawable/botaovermelho"
+                    android:id="@+id/btConfPgto"
+                    android:drawableLeft="@mipmap/ic_confpgto"
+                    android:text="Confirmar Pagamento"
+                    android:onClick="onClickConfPgto"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pedidos Realizados"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#010101"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ID"
+                    android:id="@+id/textView4"
+                    android:textStyle="bold"
+                    android:textColor="#020202" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:text="Produto"
+                    android:id="@+id/textView5"
+                    android:textStyle="bold"
+                    android:textColor="#010101" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Valor"
+                    android:id="@+id/textView8"
+                    android:textStyle="bold"
+                    android:textColor="#010101" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Qtde."
+                    android:id="@+id/textView6"
+                    android:textStyle="bold"
+                    android:textColor="#010101" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Preço"
+                    android:id="@+id/textView7"
+                    android:textStyle="bold"
+                    android:textColor="#010101" />
+
+            </LinearLayout>
+
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/lvFecharConta">
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:id="@+id/viewConta">
+
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/llConta">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text=""
+                    android:id="@+id/txtTotalteste"
+                    android:textStyle="bold"
+                    android:textColor="#010101" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.85"
+                    android:text="Total:"
+                    android:id="@+id/txtTotal"
+                    android:textStyle="bold"
+                    android:textColor="#010101"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

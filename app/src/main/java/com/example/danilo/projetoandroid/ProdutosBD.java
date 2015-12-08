@@ -53,7 +53,7 @@ public class ProdutosBD extends SQLiteOpenHelper {
             pBanco.close();
         }
     }
-
+    //Método q edita o produto no banco de dados
     public void updtProduto(Produtos produtos){
         SQLiteDatabase pBanco = this.getWritableDatabase();
         try {

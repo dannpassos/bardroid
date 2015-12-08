@@ -37,7 +37,7 @@ public class ProdutosBD extends SQLiteOpenHelper {
         onCreate(db);
 
     }
-
+    //Método que adiciona produtos no banco de dados
     public boolean addProduto(Produtos produtos){
         SQLiteDatabase pBanco = this.getWritableDatabase();
         try{
